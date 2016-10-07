@@ -29,33 +29,34 @@ float waistSize(float, int);
 
 int main()
 {
-     char answer;
-     do {
-    float height, weight;
-    int age;
+    char answer;
+    do 
+    {
+         float height, weight;
+         int age;
 
-    cout << "Give me your height in inches, weight in pounds, and age in years and I will give you your hat size, jacket size (inches at chest) and your waist size in inches." << endl;
-    cout << "Enter height in inches: ";
-    cin >> height;
+         cout << "Give me your height in inches, weight in pounds, and age in years and I will give you your hat size, jacket size (inches at chest) and your waist size in inches." << endl;
+         cout << "Enter height in inches: ";
+         cin >> height;
 
-    cout << "Enter weight in lbs: ";
-    cin >> weight;
-                                                                                                         1,5           Top
-    cout << "Enter age: ";
-    cin >> age;
+         cout << "Enter weight in lbs: ";
+         cin >> weight;
+                                                                                                              1,5           Top
+         cout << "Enter age: ";
+         cin >> age;
 
-    float h = hatSize(weight, height);
-    cout << endl << "Hat size = " << roundf(h * 100) / 100 << endl;
+         float h = hatSize(weight, height);
+         cout << endl << "Hat size = " << roundf(h * 100) / 100 << endl;
 
-    float j = jacketSize(height, weight, age);
-    cout << "Jacket size = " << roundf(j * 100) / 100<< endl;
+         float j = jacketSize(height, weight, age);
+         cout << "Jacket size = " << roundf(j * 100) / 100 << endl;
 
-    float w = waistSize(weight, age);
-    cout << "Waist size = " << roundf(w * 100) / 100 << endl;
+         float w = waistSize(weight, age);
+         cout << "Waist size = " << roundf(w * 100) / 100 << endl;
 
-    cout << endl << "enter Y or y to repeat, any other character ends: ";
-    cin >> answer;
-
+         cout << endl << "enter Y or y to repeat, any other character ends: ";
+         cin >> answer;
+         
      } while (answer == 'Y' || answer == 'y');
 }
 
